@@ -4,7 +4,7 @@ import Speeches from "../composants/speeches";
 import { SpeechesWedding } from "../constantes";
 
 const Home = () =>  (
-    <div className="py-5 px-[100px]">
+    <div className="py-5 px-[25px]">
         <Header />
         <div className="flex justify-center gap-10 flex-wrap px-[100px]">
         {SpeechesWedding.map((speech)=>(

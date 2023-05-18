@@ -10,7 +10,7 @@ function Speech() {
     const selectedSpeech= SpeechesWedding.find(speech => speech.author === author);
   return (
     
-    <div className='py-5 px-[100px]'>
+    <div className='py-5 px-[25px]'>
         <Header setLanguage={setLanguage} />
         <div className='flex gap-10 mb-10'>
             <img src={selectedSpeech.photo}  className='w-[150px]'/>
