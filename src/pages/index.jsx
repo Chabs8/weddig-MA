@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Header from "../composants/header";
 import Speeches from "../composants/speeches";
-import { createClient } from '@supabase/supabase-js'
+import TradMenu from "../composants/TradMenu";
+import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = 'https://togbptjxijlvxlcmssig.supabase.co' // utilisez votre URL Supabase
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRvZ2JwdGp4aWpsdnhsY21zc2lnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODU5ODI4MDYsImV4cCI6MjAwMTU1ODgwNn0.H0ibQ7SnXHJgrRyNaWb13_-nJwXtmlItRcdIqKKCTCI' // utilisez votre clé API publique
@@ -44,6 +45,7 @@ const Home = () => {
             
         })}
       </div>
+      <TradMenu />
     </div>
   );
 };
