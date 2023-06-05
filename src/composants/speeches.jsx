@@ -18,7 +18,7 @@ function Speeches({ author, status}) {
         pic = Mette
     }
   return (
-    <div className='bg-[#7284A8]  flex items-center p-[25px] w-[250px] rounded-[12px]' onClick={() => handleSpeechClick(author)}>
+    <div className='bg-[#FF5E5B]  shadow-lg flex items-center p-[25px] w-[250px] rounded-[12px]' onClick={() => handleSpeechClick(author)}>
         <div className='w-[100px]'>
             <p>{author}</p>
             <p>{status}</p>

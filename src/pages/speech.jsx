@@ -51,7 +51,7 @@ function Speech() {
     }
     return (
         <div className='py-5 px-[25px]'>
-            <Header setLanguage={setLanguage} />
+            <Header setLanguage={setLanguage} showLanguageSelector={true} />
             <img className='w-[150px] h-[150px] object-cover ' src={pic} alt={speech.author}></img>
             <div className='flex gap-10 mt-2 mb-10'>
                 <h1>{speech.author + ' - ' + speech.status}</h1>

@@ -8,7 +8,7 @@
     }
    return (
      <div className='w-full  flex justify-center mt-10'>
-        <div className='w-[250px] bg-white rounded-[12px] p-5 align-center' onClick={() => handleTradClick()}>
+        <div className='w-[250px] shadow-lg bg-white rounded-[12px] p-5 align-center' onClick={() => handleTradClick()}>
             <p className='text-[black!important] text-[22px] text-bold'>Guess traditions with emojis → 💃🏼🕺🏼</p>
         </div>
      </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { LogoWhite } from "../assets";
 import { useNavigate } from "react-router-dom";
 
-function Header({setLanguage}) {
+function Header({setLanguage,  showLanguageSelector = false }) {
     const navigateTo = useNavigate();
     function handleBackClick() {
         navigateTo(`/`);
@@ -16,11 +16,13 @@ function Header({setLanguage}) {
     
     <div className="h-[8vh] flex flex-row items-center justify-between">
         <img className="w-[50px]" onClick={() => handleBackClick()} src={LogoWhite}></img>
-        <select name="laguages" defaultValue={"English"} id="languages" onChange={handleLanguageChange}>
-            <option value="French">French</option>
-            <option value="English" >English</option>
-            <option value="Danish">Danish</option>
+        {showLanguageSelector && (
+        <select name="languages" defaultValue={"English"} id="languages" onChange={handleLanguageChange}>
+          <option value="French">French</option>
+          <option value="English" >English</option>
+          <option value="Danish">Danish</option>
         </select>
+      )}
     </div>
 )}
 
