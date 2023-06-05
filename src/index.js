@@ -4,7 +4,6 @@ import Home from './pages/index';
 import Speech from './pages/speech';
 import Admin from './pages/admin';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { SpeechProvider } from './composants/SpeechContext'; // remplacer par le chemin vers votre fichier contenant SpeechContext
 import './index.css';
 
 const router = createBrowserRouter([
@@ -24,8 +23,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <SpeechProvider>
       <RouterProvider router={router} />
-    </SpeechProvider>
   </React.StrictMode>
 );
