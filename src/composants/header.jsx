@@ -17,9 +17,9 @@ function Header({setLanguage}) {
     <div className="h-[8vh] flex flex-row items-center justify-between">
         <p className="w-[50px]" onClick={() => handleBackClick()}>Back</p>
         <img className="w-[50px]" src={LogoWhite}></img>
-        <select name="laguages" id="languages" onChange={handleLanguageChange}>
+        <select name="laguages" defaultValue={"English"} id="languages" onChange={handleLanguageChange}>
             <option value="French">French</option>
-            <option value="English">English</option>
+            <option value="English" >English</option>
             <option value="Danish">Danish</option>
         </select>
     </div>

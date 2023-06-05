@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 
-function Speeches({photo, author, status}) {
+function Speeches({ author, status}) {
 
     const navigateTo = useNavigate();
     function handleSpeechClick(author) {
@@ -12,9 +12,6 @@ function Speeches({photo, author, status}) {
         <div>
             <p>{author}</p>
             <p>{status}</p>
-        </div>
-        <div>
-            <img className='w-[100px] rounded-[10px]' src={photo} />
         </div>
     </div>
   )
