@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import Header from '../composants/header';
 import { createClient } from '@supabase/supabase-js'
-import { Finn, Bettina, Mette } from '../assets';
+import { Finn, Bettina, Mette, Eliane, Christophe } from '../assets';
 import parse from 'html-react-parser';
 
 
@@ -49,16 +49,21 @@ function Speech() {
     if (Mette.includes(author)){
         pic = Mette
     }
+    if (Eliane.includes(author)){
+        pic = Eliane
+    }
+    if (Christophe.includes(author)){
+        pic = Christophe
+    }
     return (
         <div className='py-5 px-[25px]'>
             <Header setLanguage={setLanguage} showLanguageSelector={true} />
             <img className='w-[150px] h-[150px] object-cover ' src={pic} alt={speech.author}></img>
-            <div className='flex gap-10 mt-2 mb-10'>
-                <h1>{speech.author + ' - ' + speech.status}</h1>
-                
+            <div className='flex gap-10 mt-2'>
+                <h1 className='text-[25px] text-bold'>{speech.author + ' - ' + speech.status}</h1>
             </div>
-            
-            <p>{parse(speech[language])}</p>
+            <hr></hr>
+            <p className='mt-10'>{parse(speech[language])}</p>
 
         </div>
     )

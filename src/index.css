@@ -8,3 +8,6 @@
 input, option, select{
   background-color: #232323;
 }
+hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.473);
+}
