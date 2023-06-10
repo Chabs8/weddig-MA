@@ -70,6 +70,7 @@ const Admin = () => {
                 />
                 {speech.author} - {speech.status}
               </label>
+              
             </div>
           ))}
         </form>

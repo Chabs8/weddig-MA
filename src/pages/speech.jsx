@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import Header from '../composants/header';
 import { createClient } from '@supabase/supabase-js'
-import { Finn, Bettina, Mette, Christophe, Eliane, Elodie, Aurelien, Baptiste } from '../assets';
+import { Finn, Bettina, Mette, Christophe, Eliane, Elodie, Aurelien, Baptiste, MetteFriendAnglais, MetteFriendFrance} from '../assets';
 import parse from 'html-react-parser';
 
 
