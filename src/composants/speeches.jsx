@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import { Finn, Bettina, Mette, Christophe, Eliane } from '../assets';
+import { Finn, Bettina, Mette, Christophe, Eliane, Elodie, Aurelien, Baptiste } from '../assets';
 function Speeches({ author, status}) {
 
     const navigateTo = useNavigate();
@@ -22,6 +22,15 @@ function Speeches({ author, status}) {
     }
     if (Christophe.includes(author)){
         pic = Christophe
+    }
+    if (Aurelien.includes(author)){
+        pic = Aurelien
+    }
+    if (Elodie.includes(author)){
+        pic = Elodie
+    }
+    if (Baptiste.includes(author)){
+        pic = Baptiste
     }
   return (
     <div className='bg-[#81A094]  shadow-lg flex items-center p-[25px] w-[250px] rounded-[12px]' onClick={() => handleSpeechClick(author)}>

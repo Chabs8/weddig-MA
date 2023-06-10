@@ -4,4 +4,7 @@ import Bettina from './Bettina.png';
 import Mette from './Mette_V2.png';
 import Christophe from './Christophe.png';
 import Eliane from './Eliane.png';
-export { LogoWhite, Finn, Bettina, Mette, Eliane, Christophe };
+import Aurelien from './Aurelien.png';
+import Baptiste from './Baptiste.png';
+import Elodie from './Elodie.png';
+export { LogoWhite, Finn, Bettina, Mette, Eliane, Christophe,Aurelien, Elodie, Baptiste };
