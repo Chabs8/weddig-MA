@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import Header from '../composants/header';
 import { createClient } from '@supabase/supabase-js'
-import { Finn, Bettina, Mette, Christophe, Eliane, Elodie, Aurelien, Baptiste, MetteFriendAnglais, MetteFriendFrance} from '../assets';
+import { Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay } from '../assets';
 import parse from 'html-react-parser';
 
 
@@ -39,31 +39,16 @@ function Speech() {
         return <div>Loading...</div>;
     }
 
+    let authors = [Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay ];
     let pic = "";
-    if (Finn.includes(author)){
-        pic = Finn
+
+    for (let i = 0; i < authors.length; i++) {
+        if (authors[i].includes(author.trim())) {
+            pic = authors[i];
+            break;
+        }
     }
-    if (Bettina.includes(author)){
-        pic = Bettina
-    }
-    if (Mette.includes(author)){
-        pic = Mette
-    }
-    if (Eliane.includes(author)){
-        pic = Eliane
-    }
-    if (Christophe.includes(author)){
-        pic = Christophe
-    }
-    if (Aurelien.includes(author)){
-        pic = Aurelien
-    }
-    if (Elodie.includes(author)){
-        pic = Elodie
-    }
-    if (Baptiste.includes(author)){
-        pic = Baptiste
-    }
+
     return (
         <div className='py-5 px-[25px]'>
             <Header setLanguage={setLanguage} showLanguageSelector={true} />

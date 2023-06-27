@@ -16,7 +16,8 @@ const Home = () => {
     const loadSpeeches = async () => {
       const { data, error } = await supabase
         .from('Speeches')
-        .select('*');
+        .select('*')
+        .eq('Danish', 'empty');
       if (error) {
         console.error('Error loading speeches', error);
         return;
@@ -45,7 +46,7 @@ const Home = () => {
             
         })}
       </div>
-      <TradMenu />
+      {/* <TradMenu /> */}
     </div>
   );
 };

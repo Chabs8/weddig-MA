@@ -20,7 +20,8 @@ const Admin = () => {
         setLoading(true);
         let { data, error } = await supabase
             .from('Speeches')
-            .select('*');
+            .select('*')
+            .eq('Danish', 'empty');
 
         if (error) {
             console.error('Error while fetching data:', error);

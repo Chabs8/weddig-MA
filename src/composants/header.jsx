@@ -20,7 +20,7 @@ function Header({setLanguage,  showLanguageSelector = false }) {
         <select name="languages" defaultValue={"English"} id="languages" onChange={handleLanguageChange}>
           <option value="French">French</option>
           <option value="English" >English</option>
-          <option value="Danish">Danish</option>
+          {/* <option value="Danish">Danish</option> */}
         </select>
       )}
     </div>

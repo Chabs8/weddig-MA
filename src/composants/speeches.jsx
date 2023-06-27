@@ -1,37 +1,24 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import { Finn, Bettina, Mette, Christophe, Eliane, Elodie, Aurelien, Baptiste } from '../assets';
+import { Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay } from '../assets';
 function Speeches({ author, status}) {
 
     const navigateTo = useNavigate();
     function handleSpeechClick(author) {
         navigateTo(`/speech/${author}`);
     }
+    
+    let authors = [Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay ];
     let pic = "";
-    if (Finn.includes(author)){
-        pic = Finn
+
+    for (let i = 0; i < authors.length; i++) {
+        if (authors[i].includes(author.trim())) {
+            pic = authors[i];
+            break;
+        }
     }
-    if (Bettina.includes(author)){
-        pic = Bettina
-    }
-    if (Mette.includes(author)){
-        pic = Mette
-    }
-    if (Eliane.includes(author)){
-        pic = Eliane
-    }
-    if (Christophe.includes(author)){
-        pic = Christophe
-    }
-    if (Aurelien.includes(author)){
-        pic = Aurelien
-    }
-    if (Elodie.includes(author)){
-        pic = Elodie
-    }
-    if (Baptiste.includes(author)){
-        pic = Baptiste
-    }
+
+
   return (
     <div className='bg-[#81A094]  shadow-lg flex items-center p-[25px] w-[250px] rounded-[12px]' onClick={() => handleSpeechClick(author)}>
         <div className='w-[100px]'>
