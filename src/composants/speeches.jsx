@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import { Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay } from '../assets';
+import { Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, ElodieChab, AmandaandLindsay } from '../assets';
 function Speeches({ author, status}) {
 
     const navigateTo = useNavigate();
@@ -8,7 +8,7 @@ function Speeches({ author, status}) {
         navigateTo(`/speech/${author}`);
     }
     
-    let authors = [Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay ];
+    let authors = [Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, ElodieChab, AmandaandLindsay ];
     let pic = "";
 
     for (let i = 0; i < authors.length; i++) {

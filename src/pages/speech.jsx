@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import Header from '../composants/header';
 import { createClient } from '@supabase/supabase-js'
-import { Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay } from '../assets';
+import { Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, ElodieChab, AmandaandLindsay } from '../assets';
 import parse from 'html-react-parser';
 
 
@@ -39,7 +39,7 @@ function Speech() {
         return <div>Loading...</div>;
     }
 
-    let authors = [Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay ];
+    let authors = [Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, ElodieChab, AmandaandLindsay ];
     let pic = "";
 
     for (let i = 0; i < authors.length; i++) {

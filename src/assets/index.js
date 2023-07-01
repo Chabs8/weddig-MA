@@ -6,7 +6,7 @@ import Marie from './Marie.png';
 import PeterMiller from './Peter Miller.png';
 import PeterPhilippeau from './Peter Philippeau.jpeg';
 import Marion from './Marion.png';
-import Elodie from './Elodie.png';
+import ElodieChab from './Elodie-Chab.png';
 import AmandaandLindsay from './Amanda and Lindsay.png';
 
-export { LogoWhite, Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, Elodie, AmandaandLindsay };
+export { LogoWhite, Daniel, JeanDenis, Julian, PeterMiller, PeterPhilippeau, Marion, Marie, ElodieChab, AmandaandLindsay };
